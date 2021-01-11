@@ -1,5 +1,5 @@
 {
-    "name": "MaQueenController",
+    "name": "MaQueenRobotControlled",
     "description": "",
     "dependencies": {
         "core": "*",
