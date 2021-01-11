@@ -1,17 +1,17 @@
 gamePad.onEvent(GamerBitPin.P14, GamerBitEvent.Down, function () {
-    radio.sendString("LEFT")
+    radio.sendString("L")
 })
 gamePad.onEvent(GamerBitPin.P15, GamerBitEvent.Down, function () {
-    radio.sendString("RIGHT")
+    radio.sendString("R")
 })
 gamePad.onEvent(GamerBitPin.P13, GamerBitEvent.Down, function () {
-    radio.sendString("BACk")
+    radio.sendString("B")
 })
 gamePad.onEvent(GamerBitPin.P8, GamerBitEvent.Down, function () {
-    radio.sendString("BACk")
+    radio.sendString("F")
 })
 gamePad.onEvent(GamerBitPin.P1, GamerBitEvent.Down, function () {
-    radio.sendString("STOP")
+    radio.sendString("X")
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "VIBRATESTART") {
@@ -22,6 +22,6 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 gamePad.onEvent(GamerBitPin.P2, GamerBitEvent.Down, function () {
-    radio.sendString("PLAY")
+    radio.sendString("Y")
 })
 radio.setGroup(123)
